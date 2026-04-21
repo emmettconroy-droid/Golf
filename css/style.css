@@ -948,14 +948,20 @@ address {
     align-items: flex-start;
     padding: 0;
     gap: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.35s ease, padding 0.35s ease;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0s linear 0.25s;
   }
 
   .nav__menu.nav-open {
-    max-height: 500px;
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
     padding: var(--sp-sm) var(--sp-sm) var(--sp-md);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0s linear 0s;
   }
 
   .nav__menu ul {
