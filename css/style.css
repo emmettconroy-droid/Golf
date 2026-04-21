@@ -598,8 +598,9 @@ ul {
 }
 
 .stats-item dt {
-  opacity: 0.75;
+  opacity: 1;
   font-weight: 400;
+  color: var(--color-white);
 }
 
 .stats-item dd {
