@@ -1,3 +1,9 @@
+---
+name: update-packages
+description: Update golf package prices and inclusions on the Atlantic Links B&B website
+allowed-tools: Read, Edit, Bash
+---
+
 # Update Golf Packages
 
 You are helping the owner of Atlantic Links B&B update their golf package pricing and inclusions on the website.
